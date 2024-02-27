@@ -54,7 +54,6 @@ html, body {
 }
 
 .background-container img {
-  position: relative;
   width: 504px;
   height: 100vh;
   object-fit: cover;
@@ -89,9 +88,14 @@ html, body {
 }
 
 .layer + p {
+  display: flex;
+  justify-content: center;
   position: absolute;
-  top: 0;
-  font-size: 100%;
+
+  top: 55rem;
+  width: 100%;
+  font-weight: bold;
+  text-shadow: 6px 6px 6px rgba(225, 225, 225, 0.2);
 }
 
 
