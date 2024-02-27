@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign-up Form</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" async></script>
 </head>
 <body>
   <div class="container">
@@ -25,7 +26,7 @@
       Sign in below
       </p>
 
-      <form action="#" method="post">
+      <form action="#" method="post" class="form">
         <h2>Let's do dis!</h2>
 
         <div class="input-container">
@@ -41,26 +42,27 @@
 
           <div class="form-row">
             <label for="useremail">EMAIL</label>
-            <input type="email" name="useremail" id="useremail" pattern="/^[\w\-\.]+@([\w-]+\.)+[\w-]{2,}$/gm" required>
+            <input type="email" name="useremail" id="useremail" required>
           </div>
 
           <div class="form-row">
             <label for="phonenumber">PHONE NUMBER</label>
-            <input type="tel" name="phonenumber" id="phonenumber" pattern="^(?:\+63|0)\d{10}$" placeholder="+63" title="Number should begin with +63, following 10 digits." required>
+            <input type="tel" name="phonenumber" id="phonenumber" pattern="^(?:\+63|0)\d{10}$" placeholder="+639876543212" title="Number should begin with +63, following 10 digits." required>
           </div>
 
           <div class="form-row">
             <label for="password">PASSWORD</label>
-            <input type="password" name="password" id="password" required>
+            <input type="password" name="password" id="password" class="pwd" required>
+            <p class="errorMessage"></p>
           </div>
 
           <div class="form-row">
             <label for="confirmpwd">CONFIRM PASSWORD</label>
-            <input type="password" name="confirmpwd" id="confirmpwd" required>
+            <input type="password" name="confirmpwd" id="confirmpwd" class="confirmpwd" required>
           </div>
         </div>
 
-        <button type="submit" id="submit">Create Account</button>
+        <button type="submit" id="submit" class="submit">Create Account</button>
         </form>
 
         <p id="last-text">Already have an account? <a href="#">Log in</a></p>

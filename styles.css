@@ -140,6 +140,13 @@ form {
   margin: 0 6rem 2rem 0;
 }
 
+.form-row p {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  color: #f06915;
+}
+
 .form-row input {
   width: 300px;
   height: 20px;
